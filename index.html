@@ -1,0 +1,49 @@
+<body>
+
+<header>
+  <h1>ESP Domótica</h1>
+  <button id="menuBtn">☰</button>
+</header>
+
+<main>
+
+  <!-- HOME -->
+  <section id="home" class="page active">
+
+    <div class="channel">
+      <button class="light off" data-out="1">Luz 1</button>
+      <button class="cfg" data-cfg="1">⚙</button>
+    </div>
+
+    <div class="channel">
+      <button class="light off" data-out="2">Luz 2</button>
+      <button class="cfg" data-cfg="2">⚙</button>
+    </div>
+
+    <div class="channel">
+      <button class="light off" data-out="3">Luz 3</button>
+      <button class="cfg" data-cfg="3">⚙</button>
+    </div>
+
+    <div class="channel">
+      <button class="light off" data-out="4">Luz 4</button>
+      <button class="cfg" data-cfg="4">⚙</button>
+    </div>
+
+  </section>
+
+  <!-- CONFIG CANAL -->
+  <section id="lightConfig" class="page">
+    <h2>Configuración Luz</h2>
+    <button onclick="goHome()">← Volver</button>
+  </section>
+
+  <!-- CONFIG GLOBAL -->
+  <section id="globalConfig" class="page">
+    <button onclick="requestSys()">Info sistema</button>
+    <button onclick="reboot()">Reboot ESP</button>
+  </section>
+
+</main>
+
+</body>

@@ -1,0 +1,24 @@
+.channel {
+  display: flex;
+  margin: 10px 0;
+}
+
+.light {
+  flex: 1;
+  height: 50px;
+  font-size: 18px;
+}
+
+.light.on {
+  background: #4caf50;
+  color: white;
+}
+
+.light.off {
+  background: #444;
+  color: white;
+}
+
+.cfg {
+  width: 50px;
+}
