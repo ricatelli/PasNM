@@ -1,25 +1,23 @@
-// ws.js
 import { state } from "./state.js";
 import { renderAll, renderOutput } from "./ui.js";
+const ESP_WS_URL = "ws://192.168.5.172:81/";
 
 let ws;
 
 export function wsConnect() {
-  ws = new WebSocket(`ws://${location.host}/ws`);
+  ws = new WebSocket(ESP_WS_URL);
 
   ws.onopen = () => {
-    state.connected = true;
-    renderAll();
+    console.log("WS conectado");
   };
 
   ws.onclose = () => {
-    state.connected = false;
-    renderAll();
+    console.log("WS desconectado");
   };
 
-  ws.onmessage = (e) => {
+  ws.onmessage = e => {
     const msg = JSON.parse(e.data);
-    routeMessage(msg);
+    console.log("WS RX:", msg);
   };
 }
 
