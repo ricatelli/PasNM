@@ -8,7 +8,7 @@ window.addEventListener("load", () => {
 });
 
 if ("serviceWorker" in navigator) {
-  navigator.serviceWorker.register("/sw.js")
-    .then(() => console.log("SW OK"))
-    .catch(err => console.error("SW ERR", err));
+  navigator.serviceWorker.register("/PasNM/sw.js")
+    .then(() => console.log("Service Worker registrado"))
+    .catch(err => console.error("SW error", err));
 }
