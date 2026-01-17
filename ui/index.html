@@ -16,9 +16,7 @@
 
   <main id="app"></main>
 
-  <script src="ws.js"></script>
-  <script src="state.js"></script>
-  <script src="app.js"></script>
+  <script type="module" src="app.js"></script>
   <script>
     if ("serviceWorker" in navigator && window.isSecureContext) {
       navigator.serviceWorker.register("./sw.js").then(() => {
@@ -35,4 +33,5 @@
 
 </body>
 </html>
+
 
