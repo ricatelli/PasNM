@@ -1,8 +1,0 @@
-{
-  "name": "PasNM Domótica",
-  "short_name": "PasNM",
-  "start_url": "/PasNM/",
-  "display": "standalone",
-  "background_color": "#111111",
-  "theme_color": "#111111"
-}
