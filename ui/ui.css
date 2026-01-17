@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+  touch-action: manipulation;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: #111;
+  color: #fff;
+  font-family: system-ui, sans-serif;
+  overflow: hidden;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  padding: 1rem;
+  font-size: 1.4rem;
+  text-align: center;
+  background: #1c1c1c;
+}
+
+#app {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+button {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 12px;
+  background: #333;
+  color: #fff;
+}
+
+button:active {
+  background: #555;
+}
+
+button.on {
+  background: #0a7;
+}
+
+button.off {
+  background: #333;
+}
