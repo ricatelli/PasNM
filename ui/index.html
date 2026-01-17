@@ -1,37 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <title>PasNM</title>
+
   <meta name="viewport"
-        content="width=device-width,
-                 initial-scale=1,
-                 maximum-scale=1,
-                 user-scalable=no">
+        content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
   <link rel="manifest" href="manifest.json">
   <link rel="stylesheet" href="ui.css">
 </head>
+
 <body>
   <header>Luces Pasillo</header>
-
   <main id="app"></main>
 
-  <script type="module" src="app.js"></script>
-  <script>
-    if ("serviceWorker" in navigator && window.isSecureContext) {
-      navigator.serviceWorker.register("./sw.js").then(() => {
-        console.log("SW registrado");
-  
-        if (localStorage.getItem("pasnm_ui_install_pending")) {
-          localStorage.removeItem("pasnm_ui_install_pending");
-          localStorage.setItem("pasnm_ui_installed", "1");
-          localStorage.setItem("pasnm_ui_version", "0.1.0");
-        }
-      });
-    }
-  </script>
-
+  <!-- ÚNICO script -->
+  <script type="module" src="./app.js"></script>
 </body>
 </html>
-
-
