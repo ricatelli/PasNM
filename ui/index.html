@@ -19,5 +19,20 @@
   <script src="ws.js"></script>
   <script src="state.js"></script>
   <script src="app.js"></script>
+  <script>
+    if ("serviceWorker" in navigator && window.isSecureContext) {
+      navigator.serviceWorker.register("./sw.js").then(() => {
+        console.log("SW registrado");
+  
+        if (localStorage.getItem("pasnm_ui_install_pending")) {
+          localStorage.removeItem("pasnm_ui_install_pending");
+          localStorage.setItem("pasnm_ui_installed", "1");
+          localStorage.setItem("pasnm_ui_version", "0.1.0");
+        }
+      });
+    }
+  </script>
+
 </body>
 </html>
+
