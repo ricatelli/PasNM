@@ -1,0 +1,35 @@
+{
+  "version": "1.0.0",
+  "files": [
+    {
+      "name": "index.html",
+      "size": 597,
+      "crc32": "6074F4EF"
+    },
+    {
+      "name": "styles.css",
+      "size": 1473,
+      "crc32": "46C11A18"
+    },
+    {
+      "name": "state.js",
+      "size": 305,
+      "crc32": "7CF709EE"
+    },
+    {
+      "name": "ws.js",
+      "size": 2338,
+      "crc32": "82EA7B22"
+    },
+    {
+      "name": "api.js",
+      "size": 1373,
+      "crc32": "CD548431"
+    },
+    {
+      "name": "ui.js",
+      "size": 963,
+      "crc32": "55A0AACA"
+    }
+  ]
+}

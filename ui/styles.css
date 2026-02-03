@@ -1,0 +1,89 @@
+/* =========================
+   Reset básico
+   ========================= */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #0f1115;
+  color: #eaeaea;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont,
+               "Segoe UI", Roboto, Ubuntu, Cantarell, sans-serif;
+}
+
+/* =========================
+   Header
+   ========================= */
+header {
+  padding: 1rem;
+  background: #151924;
+  border-bottom: 1px solid #2a2f40;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+#sysinfo {
+  margin-top: 0.25rem;
+  font-size: 0.85rem;
+  opacity: 0.75;
+}
+
+/* =========================
+   Main
+   ========================= */
+main {
+  padding: 1rem;
+}
+
+/* =========================
+   Channels
+   ========================= */
+#channels {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.75rem;
+}
+
+.channel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: #1b2030;
+  border-radius: 8px;
+}
+
+.channel span {
+  font-size: 1rem;
+}
+
+/* =========================
+   Buttons
+   ========================= */
+button {
+  appearance: none;
+  border: none;
+  border-radius: 6px;
+  padding: 0.6rem 1rem;
+  font-size: 0.95rem;
+  cursor: pointer;
+  color: #fff;
+}
+
+button.on {
+  background: #2ecc71;
+}
+
+button.off {
+  background: #c0392b;
+}
+
+button:active {
+  transform: scale(0.97);
+}
